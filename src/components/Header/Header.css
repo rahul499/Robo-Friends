@@ -1,0 +1,21 @@
+.head {
+	transition: all 1s;
+	margin-bottom: 4em;
+}
+
+.header {
+	text-align:center;
+	font-family: fantasy;
+    font-size: 4em;
+	border: 2px solid pink;
+	-moz-box-shadow: 4px 4px 5px #888888;
+	-ms-box-shadow: 4px 4px 5px #888888;
+	-webkit-box-shadow: 4px 4px 5px #888888;
+	-o-box-shadow: 4px 4px 5px #888888;
+    box-shadow: 4px 4px 5px #888888;
+ 
+}
+
+.head:hover {
+	transform: scale(1.1);
+}
