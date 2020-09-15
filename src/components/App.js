@@ -3,6 +3,7 @@ import Cards from './Cards/Cards';
 import Header from './Header/Header';
 import Search from './Search/Search';
 import Scroll from './Scroll/Scroll';
+import ErrorBoundary from './ErrorBoundary';
 
 
 class App extends Component {
@@ -43,7 +44,9 @@ class App extends Component {
             <Header />
             <Search searchChange = {this.onSearchChange} />
             <Scroll>
-              <Cards data = {filteredData}  />
+              <ErrorBoundary>
+               <Cards data = {filteredData}  />
+              </ErrorBoundary>
             </Scroll>
           </div>
      );
